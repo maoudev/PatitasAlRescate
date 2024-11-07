@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: PatitasAlRescate
+
+  datasource:
+    username: ...
+    password: ...
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://.../patitasAlRescate?createDatabaseIfNotExist=true
+  jpa:
+    hibernate:
+      ddl-auto: update
+  cloud:
+    azure:
+      storage:
+        blob:
+          connection-string: ...
+          container-name: patitasimagenes
+
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 15MB
+app:
+  secret_key: ...
+
